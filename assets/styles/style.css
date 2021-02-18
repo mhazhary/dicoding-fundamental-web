@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+main {
+    padding: 20px;
+}
+
 h2,
 h3 {
     color: #00a2c6;
