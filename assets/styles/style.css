@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
@@ -8,11 +12,16 @@ body {
 
 main {
     padding: 20px;
+    overflow: auto;
 }
 
 h2,
 h3 {
     color: #00a2c6;
+}
+
+header {
+    display: inline;
 }
 
 footer {
@@ -61,6 +70,8 @@ nav li {
 nav {
     background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -72,4 +83,24 @@ nav a {
 
 nav a:hover {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#content {
+    float: left;
+    width: 75%;
+    text-align: justify;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
 }
