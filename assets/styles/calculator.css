@@ -37,13 +37,13 @@ body {
 
 .button:hover {
     font-weight: bold;
- }
+}
 
- @media screen and (max-width: 513px) {
+@media screen and (max-width: 513px) {
     .button {
         padding: 10px;
     }
- }
+}
 
 .double {
     flex-basis: 50%;
@@ -56,12 +56,12 @@ body {
     background-color: #333333;
     border: 1px solid black;
     font-size: 2em;
- }
+}
 
- .operator,
+.operator,
 .negative,
 .equals {
-   background: orange;
+    background: orange;
 }
 
 .card {
@@ -69,5 +69,36 @@ body {
     border-radius: 5px;
     padding: 30px;
     margin-top: 20px;
- }
+}
 
+.history {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow: auto;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+th {
+    background-color: orange;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+    .history {
+        width: 100%;
+    }
+}
